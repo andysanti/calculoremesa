@@ -12,4 +12,5 @@ public class InformacionCalculoDtoRequest {
     private String dni;
     private Double montoOrigen;
     private String monedaDestino;
+    private String monedaOrigen;
 }

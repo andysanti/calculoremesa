@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calculoremesav5
+spec:
+  selector:
+    matchLabels:
+      app: calculoremesav5
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: calculoremesav5
+    spec:
+      containers:
+        - name: calculoremesav5
+          image: calculoremesa
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+
